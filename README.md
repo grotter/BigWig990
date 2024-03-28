@@ -1,8 +1,8 @@
-## Dependencies
+### integration
 
 * [ProPublica Nonprofit Explorer API](https://projects.propublica.org/nonprofits/api)
 
-### @todo
+### todo
 
 * Better smartphone layout
 
