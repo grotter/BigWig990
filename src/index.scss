@@ -200,12 +200,14 @@ body {
                 padding-left: 30px;
                 float: right;
                 overflow: hidden;
+                margin-right: 1em;
 
                 @media (max-width: 875px) {
                     float: none;
                     padding-left: 0;
                     padding-bottom: 1em;
                     margin-bottom: 2em;
+                    margin-right: 0;
 
                     border-bottom: 3px solid #000000;
                 }
