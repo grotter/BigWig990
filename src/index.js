@@ -82,10 +82,35 @@ function BigWigAutocomplete() {
 		setRowData(d);
 		setLoading(false);
 		
-		if (d.length === 0) setStatus(MESSAGES.missing);
+		if (d.length === 0) {
+			setStatus(MESSAGES.missing);
+			return;
+		}
 
+		// resize grid to fit browser
+		window.removeEventListener('resize', onResize);
+		window.addEventListener('resize', onResize);
 		window.dispatchEvent(new Event('resize'));
 	};
+
+	const onResize = (e) => {
+		gridRef.current?.api.sizeColumnsToFit({
+			columnLimits: [
+				{
+					key: 'year',
+					maxWidth: 120
+				},
+				{
+					key: 'name',
+					maxWidth: 250
+				},
+				{
+					key: 'totalComp',
+					maxWidth: 200
+				}
+			]
+		});
+	}
 
 	const processData = (data) => {
 		// year
@@ -348,6 +373,7 @@ function BigWigAutocomplete() {
 		setOrgCategory('');
 		setOrgMetadata('');
 		setDisambiguateList('');
+		window.removeEventListener('resize', onResize);
 
 		if (obj) {
 			const isMultiple = (el) => el.title === obj.title && el.value !== obj.value;
@@ -405,26 +431,6 @@ function BigWigAutocomplete() {
 		if (!isShareEnabled(shareObj)) {
 			console.log('Enable the native Web Share APIs chrome://flags/#web-share');
 		}
-
-		// resize grid to fit browser
-		window.addEventListener('resize', () => {
-			gridRef.current?.api.sizeColumnsToFit({
-				columnLimits: [
-					{
-						key: 'year',
-						maxWidth: 120
-					},
-					{
-						key: 'name',
-						maxWidth: 250
-					},
-					{
-						key: 'totalComp',
-						maxWidth: 200
-					}
-				]
-			});
-		});
 
 		// deep link
 		window.addEventListener('hashchange', (e) => {
