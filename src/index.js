@@ -341,6 +341,8 @@ function BigWigAutocomplete() {
 
 	// submit
 	const onChange = (event, obj, reason) => {
+		_bigwigs = {};
+		
 		setStatus('');
 		setOrgName('');
 		setOrgCategory('');
