@@ -258,10 +258,18 @@ body {
                     float: none;
                     padding-left: 0;
                     padding-bottom: 1em;
-                    margin-bottom: 2em;
+                    margin-bottom: 1em;
                     margin-right: 0;
     
                     border-bottom: 3px solid #000000;
+                }
+            }
+
+            @media (max-width: 450px) {
+                .nav {
+                    .export {
+                        display: none;
+                    }
                 }
             }
         }

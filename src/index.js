@@ -480,7 +480,7 @@ function BigWigAutocomplete() {
 					<li>
 						<a target="_blank" rel="noreferrer" href={proPublicaLink}>View on ProPublica</a>
 					</li>
-					<li>
+					<li className="export">
 						<button onClick={onExport}>Export</button>
 					</li>
 					<li className="share">
