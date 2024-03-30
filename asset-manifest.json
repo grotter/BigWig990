@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/BigWig990/static/css/main.c47b9e3a.css",
-    "main.js": "/BigWig990/static/js/main.37295a16.js",
+    "main.css": "/BigWig990/static/css/main.2cc87074.css",
+    "main.js": "/BigWig990/static/js/main.4950cc5c.js",
     "static/js/787.d4aba7ab.chunk.js": "/BigWig990/static/js/787.d4aba7ab.chunk.js",
     "index.html": "/BigWig990/index.html",
     "static/media/arrow.svg": "/BigWig990/static/media/arrow.de1fbe815b66ab88ce77.svg",
     "static/media/slash.svg": "/BigWig990/static/media/slash.45a2f8ec1c61f5be8166.svg",
-    "main.c47b9e3a.css.map": "/BigWig990/static/css/main.c47b9e3a.css.map",
-    "main.37295a16.js.map": "/BigWig990/static/js/main.37295a16.js.map",
+    "main.2cc87074.css.map": "/BigWig990/static/css/main.2cc87074.css.map",
+    "main.4950cc5c.js.map": "/BigWig990/static/js/main.4950cc5c.js.map",
     "787.d4aba7ab.chunk.js.map": "/BigWig990/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c47b9e3a.css",
-    "static/js/main.37295a16.js"
+    "static/css/main.2cc87074.css",
+    "static/js/main.4950cc5c.js"
   ]
 }
